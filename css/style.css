@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "josfin Sans", sans-serif;
+}
+/*todo BK TA3 L PAGE RA2ISSIYA  */
+.hiba {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(15, 15, 20, 0.85), rgba(0, 0, 0, 0.6)),
+    url("../images/BK.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative; /** ضروري باش nav المطلق يتمركز داخلها */
+}
+/*todo BK TA3 L PAGES LO5RIN  */
+.MERYEM {
+  padding: 80px 0;
+  background-color: #111; /* خلفية داكنة بسيطة */
+  color: #fff;
+  text-align: center;
+  margin-top: 70px; /* باش nav ما تغطيش العنوان */
+}
+/*todo BK TA3 L Biographie  */
+.bio-bg {
+  background-image: url("../images/Ch1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10%;
+  position: absolute; /** خلي nav فوق الخلفية */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /** باش ما يختفيش وراء الصورة */
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+}
+
+span-1 {
+  color: #ea1538;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  background-color: #ea1538;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-right: 1.5%;
+}
+
+button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  background-color: #780718;
+}
+
+.footer {
+  background-color: #0f0e0e;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  /*! backdrop-filter: blur(5px); */
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span {
+  color: #ea1538;
+}
+
+.footer .social-icons a i {
+  font-size: 1.3em;
+  padding: 0px 12px 0 0;
+}
+
+.social-icons a i {
+  color: #ea1538;
+  font-size: 1.7em;
+  padding-right: 30px;
+  /*! transition: .6s; */
+}
+
+.social-icons a i:hover {
+  color: #661020;
+  transform: scale(1.3);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/*! 1 */
+/*? Biographie Page  */
+/*! 2 */
+/* باش تكون المسافة بين الـ navbar والمحتوى */
+.content-section {
+  padding: 100px 20px; /* باش يكون تباعد مزيان من الفوق والتحت */
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/BK3.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container */
+.content-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 30px;
+  padding: 40px 60px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* النص فليسار */
+.content-section .container .text {
+  flex: 1;
+  color: #fff;
+  text-align: left;
+  margin-right: 40px;
+}
+
+.content-section .container .text h2 {
+  font-size: 2rem;
+  color: #ffcccb;
+  margin-bottom: 20px;
+}
+
+.content-section .container .text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #eee;
+  margin-bottom: 18px;
+  text-align: justify; /* باش يكون النص منسّق على الجانبين */
+}
+
+/* الصورة فاليمين */
+.content-section .container img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transition: calc(1.3);
+}
+
+.content-section .container img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.9s;
+}
+
+/* العنوان العام */
+.titel {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.titel h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+#tx {
+  font-size: 1.3rem;
+  color: #ffb3b3;
+}
+
+/*! 2 */
+/*? OEVRE Page  */
+/*! 3 */
+
+.India {
+  padding: 100px 20px; /* باش يكون تباعد مزيان من الفوق والتحت */
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/BK6.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.titel {
+  /* margin-top: 100px; */
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titel h1 {
+  margin-top: 100%;
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.titel h3 {
+  font-size: 1.5rem;
+  color: #ffb3b3;
+  margin-top: 2em;
+}
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 320px;
+  min-height: 420px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h4 {
+  color: #0f0e0e;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card p.description {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-top: auto;
+  background-color: #ea1538;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #bb1632;
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .titel h1 {
+    font-size: 1.8rem;
+  }
+
+  .card img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+}
+
+/*!  TABLE  */
+/*? RESUME */
+/*!  TABLE  */
+
+/* نحصر التنسيق فقط فالجدول ديال الصفحة الحالية */
+.NASSIBA {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/BK7.png");
+  background-size: cover;
+  background-position: center;
+}
+.title-t {
+  margin-top: 300px;
+  text-align: center;
+}
+.title-t h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.title-t h3 {
+  font-size: 1.5rem;
+  color: #ffb3b3;
+  margin-top: 2em;
+}
+
+.table-bio {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1100px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.table-bio th {
+  background-color: #e50914;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-bio td {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.table-bio td a {
+  color: #e50914;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.table-bio td a:hover {
+  text-decoration: underline;
+}
+
+.table-bio td ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-bio td li {
+  margin: 6px 0;
+}
+
+.table-bio tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table-bio tr:hover {
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .table-bio {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+  .table-bio th,
+  .table-bio td {
+    padding: 10px 5px;
+  }
+}
+
+/*!  */
+.body-tnx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161623;
+  min-height: 100vh;
+}
+
+.sectio {
+  position: relative;
+}
+
+.TXAP__TXAP::before,
+.TXAP__TXAP::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.TXAP__TXAP::before {
+  background: linear-gradient(red, rgb(172, 2, 158));
+  clip-path: circle(25% at right 60%);
+}
+
+.TXAP__TXAP::after {
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(20% at left 40%);
+}
+
+.continer-tnx {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.continer-tnx .card-tnx {
+  position: relative;
+  width: 260px;
+  height: 400px;
+  background: rgba(225, 225, 225, 0.06);
+  margin: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(225, 225, 225, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px) saturate(180px);
+}
+
+.continer-tnx .card-tnx .content-tnx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.continer-tnx .card-tnx:hover .content-tnx {
+  opacity: 1;
+}
+
+.continer-tnx .card-tnx .content-tnx .img-BX {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.continer-tnx .card-tnx .content-tnx .img-BX img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.continer-tnx .card-tnx .content-tnx .content-BX h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.continer-tnx .card-tnx .content-tnx .content-BX h3 .span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+.continer-tnx .card-tnx .sci {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.continer-tnx .card-tnx li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+}
+
+.continer-tnx .card-tnx li a {
+  color: #fff;
+  font-size: 24px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.continer-tnx .card-tnx:hover li a {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.napoli{
+  color: #ea1538;
+}
+
